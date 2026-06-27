@@ -14,12 +14,48 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   background: linear-gradient(135deg, var(--bg), #efe2d2);
   color: var(--text);
   line-height: 1.7;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto;
+  border-radius: 50%;
+  filter: blur(22px);
+  opacity: 0.45;
+  z-index: -1;
+  animation: floatBlob 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+body::before {
+  width: 12rem;
+  height: 12rem;
+  top: 4rem;
+  left: -3rem;
+  background: rgba(232, 206, 178, 0.6);
+}
+
+body::after {
+  width: 16rem;
+  height: 16rem;
+  bottom: 2rem;
+  right: -4rem;
+  background: rgba(168, 107, 67, 0.16);
+  animation-duration: 14s;
 }
 
 .site-header {
@@ -41,6 +77,13 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-size: 0.86rem;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .site-nav a.active {
@@ -107,6 +150,13 @@ h1 {
   border-radius: 999px;
   font-weight: 600;
   box-shadow: 0 8px 24px rgba(168, 107, 67, 0.16);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(168, 107, 67, 0.2);
 }
 
 .button.secondary {
@@ -124,6 +174,14 @@ h1 {
   padding: 1.3rem;
   box-shadow: 0 10px 30px rgba(47, 36, 29, 0.05);
   margin-bottom: 1rem;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.content-card:hover,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(47, 36, 29, 0.08);
+  border-color: var(--accent-soft);
 }
 
 .card-grid {
@@ -136,6 +194,55 @@ form {
   display: grid;
   gap: 0.8rem;
   margin-top: 1rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+
+.tag-list span {
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.about-list {
+  margin: 0.8rem 0 0 1.1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+  color: var(--muted);
+}
+
+.about-layout {
+  display: grid;
+  gap: 1.2rem;
+  align-items: center;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+}
+
+.about-image-wrap {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 6px solid var(--accent-soft);
+  box-shadow: 0 12px 32px rgba(168, 107, 67, 0.18);
+  background: linear-gradient(135deg, var(--accent-soft), #f7e7d6);
+  padding: 0.35rem;
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
 }
 
 input,
@@ -158,6 +265,82 @@ button {
   cursor: pointer;
 }
 
+.hero-stickers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.sticker {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background: rgba(255, 250, 244, 0.8);
+  border: 1px solid rgba(168, 107, 67, 0.2);
+  box-shadow: 0 8px 20px rgba(47, 36, 29, 0.08);
+  animation: drift 5.5s ease-in-out infinite;
+}
+
+.sticker-one {
+  top: 0.5rem;
+  right: 3rem;
+  animation-delay: 0s;
+}
+
+.sticker-two {
+  bottom: 1rem;
+  left: 2rem;
+  animation-delay: 1.2s;
+}
+
+.sticker-three {
+  top: 3rem;
+  left: 1rem;
+  animation-delay: 2s;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(4deg);
+  }
+}
+
+@keyframes floatBlob {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(1rem, -1.2rem, 0) scale(1.06);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body::before,
+  body::after,
+  .sticker {
+    animation: none;
+  }
+
+  .button,
+  .content-card,
+  .card,
+  .site-nav a {
+    transition: none;
+  }
+}
+
 @media (max-width: 600px) {
   .hero {
     padding-top: 1.2rem;
@@ -165,5 +348,9 @@ button {
 
   .site-nav {
     gap: 0.6rem;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
   }
 }
