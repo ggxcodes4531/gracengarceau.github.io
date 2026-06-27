@@ -125,6 +125,13 @@ h1 {
   line-height: 1.1;
 }
 
+.typing-cursor {
+  display: inline-block;
+  margin-left: 0.1rem;
+  color: var(--accent);
+  animation: blink 0.8s step-end infinite;
+}
+
 .tagline {
   font-size: 1.05rem;
   color: var(--muted);
@@ -321,6 +328,12 @@ button {
   }
   to {
     transform: translate3d(1rem, -1.2rem, 0) scale(1.06);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 
