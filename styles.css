@@ -95,6 +95,7 @@ body::after {
   max-width: 960px;
   margin: 0 auto;
   padding: 1.2rem 1.5rem 4rem;
+  position: relative;
 }
 
 .hero {
@@ -265,7 +266,8 @@ button {
   cursor: pointer;
 }
 
-.hero-stickers {
+.hero-stickers,
+.page-stickers {
   position: absolute;
   inset: 0;
   pointer-events: none;
