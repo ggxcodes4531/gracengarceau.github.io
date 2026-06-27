@@ -14,6 +14,7 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
+        <a href="learning.html">Learning</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
     </header>
@@ -21,15 +22,15 @@
     <main class="page">
       <section class="content-card">
         <h1>Let’s Connect</h1>
-        <p>Email: ggarceau@gatech.edu</p>
-        <p>GitHub: https://github.com/ggxcodes4531</p>
-        <p>LinkedIn: www.linkedin.com/in/gracengarceau</p>
+        <p>Email: gracengarceau@gmail.com</p>
+        <p>GitHub: github.com/ggxcodes4531</p>
+        <p>LinkedIn: linkedin.com/in/gracen-garceau</p>
 
-        <form>
+        <form action="mailto:gracengarceau@gmail.com" method="post" enctype="text/plain">
           <label for="name">Name</label>
-          <input id="name" type="text" placeholder="Your name" />
+          <input id="name" name="name" type="text" placeholder="Your name" required />
           <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
           <button type="submit">Send</button>
         </form>
       </section>
