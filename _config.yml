@@ -1,0 +1,5 @@
+title: Grace Garceau
+url: https://gracengarceau.com
+baseurl: ""
+plugins:
+  - jekyll-sitemap
