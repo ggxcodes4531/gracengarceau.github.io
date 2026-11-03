@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Projects</title>
-    <link rel="canonical" href="https://gracengarceau.com/projects.html" />
-    <meta property="og:url" content="https://gracengarceau.com/projects.html" />
+    <meta name="description" content="Technical project work by Gracen Garceau." />
+    <title>Gracen Garceau | Projects</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,32 +12,76 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="projects.html" class="active">Projects</a>
+        <a href="career-goals.html">Career Goals</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html" aria-current="page">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <main class="page">
-      <section class="content-card">
-        <h1>Selected Work</h1>
+      <header class="page-heading">
+        <p class="eyebrow">Selected work</p>
+        <h1>Technical Projects</h1>
+        <p class="tagline">
+          A growing collection of engineering work, with room for new projects
+          and deeper documentation over time.
+        </p>
+      </header>
+
+      <section class="content-card featured-project" aria-labelledby="discovery-heading">
+        <p class="eyebrow">Featured project</p>
+        <h2 id="discovery-heading">Discovery Project</h2>
+        <p class="content-prompt">
+          Replace this prompt with the project name and a concise introduction
+          to the problem, your role, and the result.
+        </p>
+        <a class="button" href="discovery-project.html">View the project feature</a>
+      </section>
+
+      <section class="section-block" aria-labelledby="project-list-heading">
+        <div class="section-heading">
+          <p class="eyebrow">More work</p>
+          <h2 id="project-list-heading">Project portfolio</h2>
+          <p class="content-prompt">
+            Add one project card for each new piece of work. Link each card to a
+            detail page when there is more to share.
+          </p>
+        </div>
         <div class="card-grid">
-          <article class="card">
-            <h2>Project One</h2>
-            <p>A thoughtful digital experience shaped around clarity, pacing, and personality.</p>
+          <article class="card project-card">
+            <p class="eyebrow">Project 02</p>
+            <h3>[Project name]</h3>
+            <p class="content-prompt">
+              Add a one- or two-sentence summary of the challenge, your
+              contribution, and the outcome.
+            </p>
+            <p class="project-meta">[Course or context] · [Year]</p>
           </article>
-          <article class="card">
-            <h2>Robot Tour project</h2>
-            <p>I worked in my engineering class to code software in C++ for a science olympiad robot that is built from scratch. The hardware in use consists of boost converters, an arduino board, a motor shield, imu & gyroscope, buttons, and PID controls together to navigate a grid and score points. I worked on this for  6  months for about 6.5 hours per week. Completed 4 different variations developing a loop PID tuning system to optimize the wheel control.
-</p>
+          <article class="card project-card">
+            <p class="eyebrow">Project 03</p>
+            <h3>[Project name]</h3>
+            <p class="content-prompt">
+              Add a one- or two-sentence summary of the challenge, your
+              contribution, and the outcome.
+            </p>
+            <p class="project-meta">[Course or context] · [Year]</p>
           </article>
-          <article class="card">
-            <h2>Bridge Breaker</h2>
-            <p>
-I worked on the electronics that utilized a liner actuator and a load cell to crushed and measure the force of balsa constructed bridges. C++ code controlled several buttons that started, stopped, reset the actuator delivering begin setup and congratulations messages to participants. I spent four months working with my engineering class for about 6 hours per week.  
-</p>
+          <article class="card project-card">
+            <p class="eyebrow">Project 04</p>
+            <h3>[Project name]</h3>
+            <p class="content-prompt">
+              Duplicate this card to grow the portfolio as you complete more
+              work.
+            </p>
+            <p class="project-meta">[Course or context] · [Year]</p>
           </article>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>Gracen Garceau · ePortfolio</p>
+    </footer>
   </body>
 </html>

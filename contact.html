@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Contact</title>
-    <link rel="canonical" href="https://gracengarceau.com/contact.html" />
-    <meta property="og:url" content="https://gracengarceau.com/contact.html" />
+    <meta name="description" content="Contact and professional links for Gracen Garceau." />
+    <title>Gracen Garceau | Contact</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,27 +12,47 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="career-goals.html">Career Goals</a>
+        <a href="resume.html">Resume</a>
         <a href="projects.html">Projects</a>
-        <a href="learning.html">Learning</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" aria-current="page">Contact</a>
       </nav>
     </header>
 
     <main class="page">
-      <section class="content-card">
-        <h1>Let’s Connect</h1>
-        <p>Email: gracengarceau@gmail.com</p>
-        <p>GitHub: github.com/ggxcodes4531</p>
-        <p>LinkedIn: linkedin.com/in/gracen-garceau</p>
+      <header class="page-heading">
+        <p class="eyebrow">Get in touch</p>
+        <h1>Contact</h1>
+        <p class="tagline">
+          Add the contact details and professional profiles you want to share.
+        </p>
+      </header>
 
-        <form action="mailto:gracengarceau@gmail.com" method="post" enctype="text/plain">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
+      <section class="content-card" aria-labelledby="connect-heading">
+        <h2 id="connect-heading">Connect with me</h2>
+        <dl class="contact-list">
+          <div>
+            <dt>Email</dt>
+            <dd>[Your preferred email address]</dd>
+          </div>
+          <div>
+            <dt>LinkedIn</dt>
+            <dd>[Your LinkedIn profile URL]</dd>
+          </div>
+          <div>
+            <dt>GitHub or portfolio</dt>
+            <dd>[Your profile URL, if applicable]</dd>
+          </div>
+        </dl>
+        <p class="content-prompt">
+          Turn each profile into a link after adding your real contact
+          information. Remove any line that does not apply.
+        </p>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>Gracen Garceau · ePortfolio</p>
+    </footer>
   </body>
 </html>
