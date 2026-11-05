@@ -311,6 +311,10 @@ figcaption {
   margin-top: 1rem;
 }
 
+.resume-page {
+  width: min(100% - 2rem, 1280px);
+}
+
 .resume-actions {
   display: flex;
   align-items: center;
@@ -329,6 +333,7 @@ figcaption {
 
 .resume-viewer {
   overflow: hidden;
+  margin: 0 auto;
   border: 1px solid var(--border);
   border-radius: 18px;
   background: #fff;
@@ -338,8 +343,8 @@ figcaption {
 .resume-viewer iframe {
   display: block;
   width: 100%;
-  height: min(80vh, 1100px);
-  min-height: 600px;
+  height: min(88vh, 1200px);
+  min-height: 700px;
   border: 0;
 }
 
@@ -464,6 +469,15 @@ figcaption {
   .resume-actions {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .resume-page {
+    width: min(100% - 1rem, 960px);
+  }
+
+  .resume-viewer iframe {
+    height: 75vh;
+    min-height: 65vh;
   }
 
   .contact-list div {
