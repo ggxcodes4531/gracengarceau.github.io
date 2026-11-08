@@ -15,6 +15,7 @@
         <a href="career-goals.html">Career Goals</a>
         <a href="resume.html">Resume</a>
         <a href="projects.html" aria-current="page">Projects</a>
+        <a href="learning.html">Learning</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
@@ -30,13 +31,25 @@
       </header>
 
       <section class="content-card featured-project" aria-labelledby="discovery-heading">
-        <p class="eyebrow">Featured project</p>
-        <h2 id="discovery-heading">Discovery Project</h2>
-        <p class="content-prompt">
-          Replace this prompt with the project name and a concise introduction
-          to the problem, your role, and the result.
-        </p>
-        <a class="button" href="discovery-project.html">View the project feature</a>
+        <div class="featured-project-layout">
+          <figure class="project-photo">
+            <img
+              src="discovery%20project.jpeg"
+              alt="Arduino-based phone reminder prototype with a motion sensor, LCD, and buzzer"
+              loading="lazy"
+            />
+            <figcaption>Prototype for the “Stay Locked In” phone reminder.</figcaption>
+          </figure>
+          <div class="featured-project-copy">
+            <p class="eyebrow">Featured project</p>
+            <h2 id="discovery-heading">“Stay Locked In” Phone Reminder</h2>
+            <p>
+              A door-mounted reminder concept that uses motion to trigger a
+              buzzer and display a message before leaving the room.
+            </p>
+            <a class="button" href="discovery-project.html">View the project feature</a>
+          </div>
+        </div>
       </section>
 
       <section class="section-block" aria-labelledby="project-list-heading">
@@ -44,39 +57,70 @@
           <p class="eyebrow">More work</p>
           <h2 id="project-list-heading">Project portfolio</h2>
           <p class="content-prompt">
-            Add one project card for each new piece of work. Link each card to a
-            detail page when there is more to share.
+            See some of my other projects...
           </p>
         </div>
         <div class="card-grid">
           <article class="card project-card">
-            <p class="eyebrow">Project 02</p>
+            <div class="project-photo-gallery">
+              <figure class="project-photo">
+                <img
+                  src="oyster%20shucker.jpg"
+                  alt="Machined metal oyster-shucking tool prototype"
+                  loading="lazy"
+                />
+                <figcaption>Machined prototype</figcaption>
+              </figure>
+              <figure class="project-photo project-photo--diagram">
+                <img
+                  src="Oyster%20Shucker.png"
+                  alt="CAD model of the oyster-shucking tool"
+                  loading="lazy"
+                />
+                <figcaption>CAD design</figcaption>
+              </figure>
+            </div>
+            <p class="eyebrow">Product design · Summer 2026</p>
             <h3>Oyster Shucker</h3>
-            <p class="content-prompt">
-              Add a one- or two-sentence summary of the challenge, your
-              contribution, and the outcome.
-              I developed and machnined a custom oyster shucker over the span of a summer, and now hold equity
-              in the product. I was resposible for the CAD and machining of several prototypes
+            <p>
+              Designed and machined several prototypes of a custom oyster
+              shucker; the product is now in production.
             </p>
-            <p class="project-meta">[Course or context] · [Year]</p>
+            <p class="project-meta">Summer 2026</p>
           </article>
           <article class="card project-card">
-            <p class="eyebrow">Project 03</p>
-            <h3>[Project name]</h3>
-            <p class="content-prompt">
-              Add a one- or two-sentence summary of the challenge, your
-              contribution, and the outcome.
+            <figure class="project-photo">
+              <img
+                src="both%20sci%20oly%20robots.jpg"
+                alt="Two student-built robots with wheels, sensors, and control electronics"
+                loading="lazy"
+              />
+              <figcaption>Robots built for Science Olympiad.</figcaption>
+            </figure>
+            <p class="eyebrow">Science Olympiad</p>
+            <h3>Robot Tour Maze Navigator</h3>
+            <p>
+              Built a maze-navigating robot and contributed primarily to
+              hardware, with additional software work, for the Robot Tour event.
             </p>
-            <p class="project-meta">[Course or context] · [Year]</p>
+            <p class="project-meta">Engineering 2 · 2025–2026</p>
           </article>
           <article class="card project-card">
-            <p class="eyebrow">Project 04</p>
-            <h3>[Project name]</h3>
-            <p class="content-prompt">
-              Duplicate this card to grow the portfolio as you complete more
-              work.
+            <figure class="project-photo project-photo--diagram">
+              <img
+                src="LoRa%20Module%20Picture.png"
+                alt="LoRa radio module board overview showing the MCU, power amplifier, RF connector, and components"
+                loading="lazy"
+              />
+              <figcaption>Board overview and module layout.</figcaption>
+            </figure>
+            <p class="eyebrow">GTXR · Fall 2026</p>
+            <h3>Custom LoRa Module</h3>
+            <p>
+              Developing a 433 MHz radio module, from component selection and
+              schematic layout to software architecture and programming.
             </p>
-            <p class="project-meta">[Course or context] · [Year]</p>
+            <p class="project-meta">GTXR · Fall 2026</p>
           </article>
         </div>
       </section>

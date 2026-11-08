@@ -15,6 +15,7 @@
         <a href="career-goals.html">Career Goals</a>
         <a href="resume.html">Resume</a>
         <a href="projects.html" aria-current="page">Projects</a>
+        <a href="learning.html">Learning</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
@@ -23,81 +24,73 @@
       <p class="breadcrumb"><a href="projects.html">Projects</a> / Discovery Project</p>
       <header class="page-heading">
         <p class="eyebrow">Featured project</p>
-        <h1>[Discovery Project Name]</h1>
-        <p class="tagline">[Add a concise one-sentence description of the project.]</p>
+        <h1>“Stay Locked In” Phone Reminder</h1>
+        <p class="tagline">
+          A motion-triggered reminder prototype designed to help me remember my
+          phone before leaving my dorm.
+        </p>
         <p class="project-meta">ECE 1100 · Fall 2026</p>
       </header>
 
       <section class="content-card" aria-labelledby="overview-heading">
         <h2 id="overview-heading">Project overview</h2>
-        <p class="content-prompt">
-          <!--Write at least 400 words across the project sections below. Explain
-          the project and its results in your own words, and replace each
-          writing prompt with specific evidence and details from your work.-->
-          The problem I set out to solve with the project was getting locked out of my dorm. 
-          Over five times early on in the semester I was stuck outside due to leaving my phone 
-          inside my dorm. I wanted to find a soultion that would force me to remeber to have my phone 
-          without being prompted by my roommate. I used an Arduindo Mega board, a motion sensor, a buzzar, and 
-          and LCD display to create a device which would grab my attention and check to see if I had my phone with me. 
-          The Aurduino Mega Board was connected to teh motion sensor and was rated to detect movement within roughly 2 feet. 
-          This then triggers a high pitch buzzar noise to alert me followed by a message on the LCD display blinking 
-          "DON'T FORGET YOUR PHONE GRACEN!" The set up is powered by a 5 volt battery pack and allows the set up to 
-          mounted directly onto the door. 
+        <p>
+          After getting locked out of my dorm several times because I left my
+          phone inside, I wanted a reminder that would catch my attention as I
+          headed out. “Stay Locked In” is a door-mounted prototype that uses
+          motion to trigger an audible alert and a message on an LCD.
         </p>
       </section>
 
-      <figure class="project-visual">
-        <div class="visual-placeholder" role="img" aria-label="Placeholder for an original project photo or visual">
-          Add an original project photo, diagram, or graphic here
-        </div>
+      <figure class="project-photo project-photo--feature">
+        <img
+          src="discovery%20project.jpeg"
+          alt="Phone reminder prototype built with an Arduino Mega, motion sensor, buzzer, and LCD"
+        />
         <figcaption>
-          Required visual: use at least one photo or visual you took or created.
-          Replace this placeholder with an image and a descriptive caption.
+          The prototype combines a motion sensor, buzzer, and LCD to deliver a
+          reminder near the doorway.
         </figcaption>
       </figure>
 
       <section class="content-card project-narrative" aria-labelledby="problem-heading">
         <p class="eyebrow">01 · Define</p>
         <h2 id="problem-heading">The Problem</h2>
-        <p class="writing-guide">Suggested target: 100–120 words</p>
-        <ul class="prompt-list">
-          <li>What problem or need did the project address, and who experienced it?</li>
-          <li>Why was the problem worth solving? What did you know before starting?</li>
-          <li>What constraints, requirements, or success criteria shaped the work?</li>
-        </ul>
-        <p class="content-prompt">Replace these prompts with your project narrative.</p>
+        <p>
+          Leaving my phone inside meant I could get locked out of my dorm. After
+          it happened several times, I wanted a simple reminder that would
+          activate as I approached the door. The goal was to make the reminder
+          noticeable without relying on another person to prompt me.
+        </p>
       </section>
 
       <section class="content-card project-narrative" aria-labelledby="process-heading">
         <p class="eyebrow">02 · Develop</p>
         <h2 id="process-heading">The Process</h2>
-        <p class="writing-guide">Suggested target: 170–200 words</p>
-        <ul class="prompt-list">
-          <li>What was your individual role, and how did you work with others?</li>
-          <li>What ideas or designs did you consider, and why did you choose your approach?</li>
-          <li>What technical methods, tools, or materials did you use?</li>
-          <li>What challenge or failure changed your approach? How did you test and improve the work?</li>
-        </ul>
-        <p class="content-prompt">Replace these prompts with your project narrative.</p>
+        <p>
+          I built the prototype around an Arduino Mega, a motion sensor, a
+          buzzer, and an LCD display. The sensor is intended to detect movement
+          within roughly two feet. When it detects someone leaving, the buzzer
+          sounds and the display flashes “DON’T FORGET YOUR PHONE, GRACEN!”
+          The components are powered by a 5-volt battery pack, and the setup is
+          designed to mount by the door.
+        </p>
+        <p>
+          I used C++ in the Arduino IDE. To reduce wiring mistakes and avoid
+          risking components, I checked the initial board wiring and added
+          components incrementally, testing their integration as I went.
+        </p>
       </section>
 
       <section class="content-card project-narrative" aria-labelledby="outcome-heading">
         <p class="eyebrow">03 · Deliver</p>
-        <h2 id="outcome-heading">The Outcome</h2>
-        <p class="writing-guide">Suggested target: 140–160 words</p>
-        <ul class="prompt-list">
-          <li>What did you build or deliver, and how well did it meet the success criteria?</li>
-          <li>What results, tests, feedback, or measurements support your conclusions?</li>
-          <li>What did you learn, and what would you change or explore next?</li>
-        </ul>
-        <p class="content-prompt">Replace these prompts with your project narrative.</p>
-      </section>
-
-      <section class="content-card" aria-labelledby="video-heading">
-        <h2 id="video-heading">Optional video</h2>
-        <p class="content-prompt">
-          If you have a video, add it here with captions or a transcript so the
-          project is accessible without sound.
+        <h2 id="outcome-heading">The Outcome &amp; Next Steps</h2>
+        <p>
+          The result is a prototype that combines a motion trigger with sound
+          and an on-screen reminder. Building it in stages helped me check the
+          hardware as I added each part. A useful next step would be to test the
+          sensor’s behavior in the doorway, refine when the reminder activates,
+          and evaluate how reliably the alert is noticed in everyday use.
         </p>
       </section>
 
