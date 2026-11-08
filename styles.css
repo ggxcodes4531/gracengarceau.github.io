@@ -296,9 +296,25 @@ p {
   object-fit: contain;
 }
 
-.project-photo--feature img {
+.project-photo--square img {
+  aspect-ratio: 1;
   height: auto;
-  max-height: 560px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-photo--feature {
+  max-width: 620px;
+  margin: 0 auto 1rem;
+}
+
+.project-photo--feature img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  border: 0;
+  border-radius: 14px;
+  box-shadow: none;
   object-fit: contain;
 }
 
@@ -330,6 +346,17 @@ p {
 
 .featured-project-copy h2 {
   margin-bottom: 0.75rem;
+}
+
+.learning-articles {
+  display: grid;
+  gap: 1rem;
+}
+
+.learning-entry {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .learning-entry h2 {

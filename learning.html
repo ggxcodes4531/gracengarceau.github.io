@@ -33,44 +33,94 @@
         </p>
       </header>
 
-      <section class="content-card learning-guide" aria-labelledby="guide-heading">
-        <p class="eyebrow">Reading notes</p>
-        <h2 id="guide-heading">Explore an idea, share what stands out</h2>
-        <p>
-          For each note, I can summarize the discovery in my own words, link to
-          the original article or research, and explain why it caught my
-          attention or what questions it raises.
-        </p>
-      </section>
-
       <section class="section-block" aria-labelledby="notes-heading">
         <div class="section-heading">
           <p class="eyebrow">Notes &amp; discoveries</p>
           <h2 id="notes-heading">A portfolio in progress</h2>
         </div>
-        <article class="content-card learning-entry">
-          <p class="eyebrow">First note coming soon</p>
-          <h2>Interesting articles and discoveries</h2>
-          <p>
-            This space is ready for notes on science and technology that
-            surprise me, challenge what I thought I knew, or connect to
-            engineering.
-          </p>
-          <dl class="learning-note-guide">
-            <div>
-              <dt>Article or discovery</dt>
-              <dd>Add a title and link to the original source.</dd>
-            </div>
-            <div>
-              <dt>Key idea</dt>
-              <dd>Explain the finding in your own words.</dd>
-            </div>
-            <div>
-              <dt>My takeaway</dt>
-              <dd>Share why it matters or what you want to explore next.</dd>
-            </div>
-          </dl>
-        </article>
+        <div class="learning-articles">
+          <article class="content-card learning-entry" aria-labelledby="inverter-heading">
+            <p class="eyebrow">Energy systems · Solar power</p>
+            <h2 id="inverter-heading">
+              Inverters for Grid-Connected Photovoltaic Systems: Getting Power
+              from Solar Panels
+            </h2>
+            <p>
+              In the simplest terms, an inverter takes direct current (DC) from
+              solar panels (photovoltaic systems) and converts it into
+              alternating current (AC) that is compatible with the electrical
+              grid.
+            </p>
+            <p>
+              Why is this conversion needed? Solar panels generate DC, which is
+              easy to store in power banks and provides steady power to devices
+              like phones. DC is like a heavy wheel of Parmesan cheese: it
+              provides a consistent amount of cheese until it runs out. The
+              electrical grid, however, mostly uses AC because its voltage is
+              easy to change and it can travel long distances.
+            </p>
+            <p>
+              The inverter uses electronic switches to convert DC into AC.
+              Imagine a child at swim class kicking their legs quickly: as one
+              leg goes down, the other moves up. The inverter similarly
+              switches the direction of the current. H-bridges using insulated
+              gate bipolar transistors (IGBTs) are commonly used because they
+              can handle high voltages and currents.
+            </p>
+            <p>
+              The inverter continuously uses a maximum power point tracking
+              (MPPT) algorithm to find the voltage and current that draw as
+              much power as possible from the solar panels. If the grid goes
+              down, anti-islanding protection disconnects the inverter from
+              it. The inverter is also like a chameleon, adapting to its
+              surroundings while protecting itself.
+            </p>
+          </article>
+
+          <article class="content-card learning-entry" aria-labelledby="diw-heading">
+            <p class="eyebrow">Materials science · Printed electronics</p>
+            <h2 id="diw-heading">
+              Direct Ink Writing (DIW): Conductive Inks for Soft Electronics
+            </h2>
+            <p>
+              Direct ink writing (DIW) enables rapid, customized prototyping
+              on softer materials, especially for electronics. Because the
+              required ink can be difficult to find, scientists worked
+              collaboratively to develop an alternative dilute, silver-flake-based
+              ink.
+            </p>
+            <p>
+              The reported formulation describes “10,000 g/min PS- and
+              PU-based formulas at 40% u/v silver loading.” Reduced spacing
+              between electrodes is expected to create electric fields
+              comparable to those in commercial systems operating at lower
+              voltages. In other words, the system can drive current at a
+              lower rate, reducing negative side effects such as
+              electrochemical reactions.
+            </p>
+            <h3>How conductivity develops</h3>
+            <ul class="prompt-list">
+              <li>
+                Silver flakes or carbon black can be used to develop
+                conductivity, applying percolation theory to an otherwise
+                insulating polymer.
+              </li>
+              <li>
+                As the volume fraction of conductive material increases,
+                clusters of conductive particles form. After the percolation
+                threshold is reached, the particles connect across clusters,
+                producing an S-shaped conductivity curve.
+              </li>
+              <li>
+                Conductivity can be correlated with the viscosity of the ink.
+              </li>
+            </ul>
+            <p class="project-meta">
+              Related theme: Microphysical systems replicating complex 3-D
+              native environments.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
 
